@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Timestamp Notes</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+  <img id="logo" src="Yt.jump-removebg-preview.png" alt="YT Jump Logo">
+</header>
+
+<div class="container">
+
+<h1>YouTube Timestamp Note Taker</h1>
+<p>Paste a YouTube link, watch the video, and create timestamped notes.</p>
+
+<div class="input-row">
+<input id="urlInput" type="text" placeholder="Paste YouTube link here">
+<button id="loadBtn">Load Video</button>
+</div>
+
+<div id="player-container">
+<div id="player"></div>
+</div>
+
+<div class="download-tools">
+<button id="downloadThumb">📷 Download Thumbnail</button>
+<button id="downloadTranscript">📝 Download Transcript</button>
+<button id="downloadVideoZip">💾 Download Video + Notes (ZIP)</button>
+<button id="downloadMp3">🎵 Download MP3</button>
+</div>
+
+<div class="controls">
+<div>Current time: <span id="currentTime">0:00</span></div>
+
+<input id="noteInput" type="text" placeholder="Write a note...">
+
+<button id="addNoteBtn">Add Timestamped Note</button>
+</div>
+
+<div id="notesList">
+<h3>Your Notes</h3>
+<ul id="notesUl"></ul>
+</div>
+
+<!-- Recently Watched Section -->
+<div class="recent-section">
+<h3>Recently Watched</h3>
+<div id="recentVideos"></div>
+</div>
+
+</div>
+
+<nav id="menu-panel">
+  <div class="menu-close">&times;</div>
+  <ul>
+    <li>
+      <a href="mailto:chimezieaf@gmail.com" class="menu-item contact-link">Contact</a>
+    </li>
+    <li class="about-li">
+      <div class="menu-item about-trigger">About <span class="dropdown-arrow">▼</span></div>
+      <div class="about-dropdown">
+        <div class="about-content">
+          i was broke and needed money so i built this
+        </div>
+      </div>
+    </li>
+<li class="more-apps-li">
+  <div class="menu-item more-apps-trigger">More apps <span class="dropdown-arrow">▼</span></div>
+  <ul class="more-apps-dropdown">
+    <li class="coming-soon-item">
+      <img src="Ultra.ai logo.png" alt="ULTRA.ai" class="app-icon">
+      <span>ULTRA.ai</span>
+      <small>Coming Soon</small>
+    </li>
+    <li class="coming-soon-item">
+      <img src="Convertrix logo.png" alt="Convertrix" class="app-icon">
+      <span>Convertrix</span>
+      <small>Coming Soon</small>
+    </li>
+  </ul>
+</li>
+    <li class="pricing-li">
+      <div class="menu-item pricing-trigger">Pricing <span class="dropdown-arrow">▼</span></div>
+      <div class="pricing-dropdown">
+        <div class="pricing-content">Its free dawg just dont sue me😭🙏</div>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<footer>
+
+<div class="footer-links">
+<a href="https://x.com/megamind1043719" target="_blank"><img src="—Pngtree—instagram icon instagram logo vector_3584852.png" alt="Instagram" class="social-icon"></a>
+<a href="https://x.com" target="_blank"><img src="sl_z_072523_61700_01-removebg-preview.png" alt="X" class="social-icon"></a>
+</div>
+
+<p>© 2026 DevWave Timestamp note</p>
+
+</footer>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
